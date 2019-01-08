@@ -13,6 +13,7 @@
 		FB1896C021E4F3F500847B33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896BF21E4F3F400847B33 /* ViewController.swift */; };
 		FB1896C221E4F40900847B33 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C121E4F40900847B33 /* AbstractionViewController.swift */; };
 		FB1896C421E4F50C00847B33 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C321E4F50C00847B33 /* DrawingView.swift */; };
+		FB1896C621E4FA1700847B33 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C521E4FA1700847B33 /* ArtCell.swift */; };
 		FBACBDF121DFC20F001F25FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBACBDF021DFC20F001F25FC /* AppDelegate.swift */; };
 		FBACBDF621DFC20F001F25FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBACBDF421DFC20F001F25FC /* Main.storyboard */; };
 		FBACBDF821DFC235001F25FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBACBDF721DFC235001F25FC /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		FB1896BF21E4F3F400847B33 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../DataProject/DataProject/Controller/ViewController.swift; sourceTree = "<group>"; };
 		FB1896C121E4F40900847B33 /* AbstractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractionViewController.swift; path = ../../../../abstractionApp/abstractionApp/Controller/AbstractionViewController.swift; sourceTree = "<group>"; };
 		FB1896C321E4F50C00847B33 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		FB1896C521E4FA1700847B33 /* ArtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		FBACBDED21DFC20E001F25FC /* MegaCSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaCSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBACBDF021DFC20F001F25FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBACBDF521DFC20F001F25FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				FBACBDF421DFC20F001F25FC /* Main.storyboard */,
 				FBACBDF921DFC235001F25FC /* LaunchScreen.storyboard */,
+				FB1896C521E4FA1700847B33 /* ArtCell.swift */,
 				FB1896C321E4F50C00847B33 /* DrawingView.swift */,
 			);
 			path = View;
@@ -213,6 +216,7 @@
 				FB1896C221E4F40900847B33 /* AbstractionViewController.swift in Sources */,
 				FB1896BE21E4F3E300847B33 /* ArtCollectionViewController.swift in Sources */,
 				FBACBDF121DFC20F001F25FC /* AppDelegate.swift in Sources */,
+				FB1896C621E4FA1700847B33 /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaCSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaCSP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MegaCSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MegaCSP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

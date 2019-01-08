@@ -16,17 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="k8K-OM-3eL">
+                                <rect key="frame" x="164" y="98" width="46" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-9q-LUE">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="cE2-d7-CdE" kind="show" id="KFs-z6-xXX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-Gc-fZ4">
+                                        <rect key="frame" x="0.0" y="88" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="pF6-8W-1eY" kind="show" id="OGb-dl-jgB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQm-7w-a3F">
+                                        <rect key="frame" x="0.0" y="176" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="kW0-hX-pHr" kind="show" id="QFh-4y-2D6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4A-Ci-hZl">
+                                        <rect key="frame" x="0.0" y="264" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="1Rl-dM-5QK" kind="show" id="Oqf-dJ-o4K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1876" y="214.54272863568218"/>
         </scene>
-        <!--View Controller-->
+        <!--Data Controller-->
         <scene sceneID="az6-Yh-3Na">
             <objects>
-                <viewController id="cE2-d7-CdE" customClass="ViewController" customModule="JensenAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cE2-d7-CdE" customClass="DataController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sE6-BO-4Ga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0I9-tP-t92" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="215"/>
+            <point key="canvasLocation" x="-482" y="-251"/>
         </scene>
         <!--Creativity View Controller-->
         <scene sceneID="ns4-4l-SSt">
@@ -98,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPt-Ay-Vum" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="-670"/>
+            <point key="canvasLocation" x="1142" y="-337"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rUH-iC-uS6">
@@ -126,17 +163,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="178"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IS0-ie-U5Y">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IS0-ie-U5Y" userLabel="artImage">
                                                     <rect key="frame" x="12" y="20" width="240" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="artImage" destination="IS0-ie-U5Y" id="zx1-AM-dw8"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-yb-Jzo">
-                                <rect key="frame" x="87" y="510" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-yb-Jzo" userLabel="artLabel">
+                                <rect key="frame" x="166" y="428" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -149,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dm-Ab-ua9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="-584"/>
+            <point key="canvasLocation" x="1950" y="-251"/>
         </scene>
         <!--Abstraction View Controller-->
         <scene sceneID="f1p-AA-Mv5">
@@ -157,7 +197,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1Rl-dM-5QK" customClass="AbstractionViewController" customModule="abstractionApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6P-UB-3Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="872"/>
+            <point key="canvasLocation" x="1950" y="616"/>
         </scene>
         <!--SwiftViewController-->
         <scene sceneID="VBK-TU-KUO">
@@ -196,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV8-Rp-2DW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="1578"/>
+            <point key="canvasLocation" x="657" y="1343"/>
         </scene>
         <!--BlockViewController-->
         <scene sceneID="Jdy-EJ-DrU">
@@ -235,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JN-lQ-cWn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="1578"/>
+            <point key="canvasLocation" x="1294" y="1343"/>
         </scene>
         <!--ByteCodeViewController-->
         <scene sceneID="dyl-n9-wJQ">
@@ -274,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCg-AD-uZT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="1578"/>
+            <point key="canvasLocation" x="1950" y="1343"/>
         </scene>
         <!--BinaryViewController-->
         <scene sceneID="jdY-y3-rLE">
@@ -314,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0NE-wR-T3F" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="1578"/>
+            <point key="canvasLocation" x="2598" y="1343"/>
         </scene>
         <!--LogicalGateViewController-->
         <scene sceneID="j4O-BW-MS4">
@@ -353,12 +393,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCc-6N-6yQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2054" y="1578"/>
+            <point key="canvasLocation" x="3318" y="1343"/>
         </scene>
-        <!--View Controller-->
+        <!--Algorythm View Controller-->
         <scene sceneID="F5d-hc-zR7">
             <objects>
-                <viewController id="kW0-hX-pHr" customClass="ViewController" customModule="JensenAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kW0-hX-pHr" customClass="AlgorythmViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S7t-aV-MZf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -392,15 +432,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shU-Ef-Lff" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="912"/>
+            <point key="canvasLocation" x="-1876" y="1343"/>
         </scene>
     </scenes>
     <resources>
-        <image name="binary" width="16" height="16"/>
-        <image name="block" width="16" height="16"/>
-        <image name="logic" width="16" height="16"/>
-        <image name="object code" width="16" height="16"/>
-        <image name="swift" width="16" height="16"/>
+        <image name="binary" width="288" height="175"/>
+        <image name="block" width="510" height="500"/>
+        <image name="logic" width="744" height="795"/>
+        <image name="object code" width="347" height="145"/>
+        <image name="swift" width="486" height="517"/>
         <image name="swiftSample" width="16" height="16"/>
     </resources>
 </document>

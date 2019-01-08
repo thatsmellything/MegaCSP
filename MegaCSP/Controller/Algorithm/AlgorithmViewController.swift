@@ -38,9 +38,9 @@ class AlgorithmViewController: UIViewController
         let stepTwo : String = "this is sme more txt"
         let stepThree : String = "pretty neet stuff"
         
-        let algorythm = [stepOne, stepTwo, stepThree]
+        let algorithm = [stepOne, stepTwo, stepThree]
         
-        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let attributesDictionary = [NSAttributedString.Key.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
         
         for step in algorithm
@@ -49,15 +49,15 @@ class AlgorithmViewController: UIViewController
             
             let formattedStep : String = "\n\(bullet) \(step)"
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
-            let outlineStyle = createOutlineStyle()
+            let outlineStyle = createOutletStyle()
             
-            attributedStringStep.addAttributes([NSAttributedStrngKey.paragraphStyle : outlineStyle], range: NSMakeRange(0,attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedString.Key.paragraphStyle : outlineStyle], range: NSMakeRange(0,attributedStringStep.length))
             fullAttributedString.append(attributedStringStep)
             
             
         }
         
-        algorithmtext.attributedText = fullAttributedString
+        algorithmText.attributedText = fullAttributedString
     }
     
     

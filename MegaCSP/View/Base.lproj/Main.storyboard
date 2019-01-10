@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k8K-OM-3eL">
-                                <rect key="frame" x="164" y="98" width="47" height="144"/>
+                                <rect key="frame" x="164" y="98" width="47" height="182"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-9q-LUE" userLabel="Data">
                                         <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
@@ -47,6 +47,13 @@
                                         <state key="normal" title="Abstraction"/>
                                         <connections>
                                             <segue destination="1Rl-dM-5QK" kind="show" id="Oqf-dJ-o4K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-8l-Gpe" userLabel="Impact">
+                                        <rect key="frame" x="0.0" y="152" width="47" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="6mF-Sw-sYc" kind="show" id="ZRc-Ja-fXa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -440,6 +447,63 @@
             </objects>
             <point key="canvasLocation" x="-1876" y="1343"/>
         </scene>
+        <!--Impact View Controller-->
+        <scene sceneID="TF8-99-xvK">
+            <objects>
+                <viewController id="6mF-Sw-sYc" customClass="ImpactViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EH9-4V-iym">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="93x-L5-W1G">
+                                <rect key="frame" x="0.0" y="20" width="375" height="272"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-UL-GxB">
+                                <rect key="frame" x="0.0" y="292" width="375" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="AJk-HS-54U"/>
+                                </constraints>
+                                <state key="normal" title="animateButton"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="un app layout" translatesAutoresizingMaskIntoConstraints="NO" id="lX7-VB-3x7" userLabel="impactImage">
+                                <rect key="frame" x="0.0" y="410" width="375" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="Bd6-rb-bKt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data about your impact app that you are addressing in the sample" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfl-Pj-Bkn">
+                                <rect key="frame" x="0.0" y="555" width="375" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="hx6-lS-5ZP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lX7-VB-3x7" firstAttribute="top" secondItem="b2c-UL-GxB" secondAttribute="bottom" constant="8" symbolic="YES" id="3xX-QD-nk9"/>
+                            <constraint firstItem="b2c-UL-GxB" firstAttribute="top" secondItem="93x-L5-W1G" secondAttribute="bottom" id="Bqe-SW-dGZ"/>
+                            <constraint firstItem="b2c-UL-GxB" firstAttribute="trailing" secondItem="lX7-VB-3x7" secondAttribute="trailing" id="KYw-Hb-sNd"/>
+                            <constraint firstItem="93x-L5-W1G" firstAttribute="leading" secondItem="EH9-4V-iym" secondAttribute="leading" id="NL6-TS-Wjt"/>
+                            <constraint firstItem="lX7-VB-3x7" firstAttribute="trailing" secondItem="Kfl-Pj-Bkn" secondAttribute="trailing" id="PaX-eM-0Qb"/>
+                            <constraint firstAttribute="trailing" secondItem="93x-L5-W1G" secondAttribute="trailing" id="RL8-Go-fCb"/>
+                            <constraint firstItem="Kfl-Pj-Bkn" firstAttribute="bottom" secondItem="Kvl-CV-yz3" secondAttribute="bottom" id="S43-ag-Vro"/>
+                            <constraint firstItem="93x-L5-W1G" firstAttribute="leading" secondItem="b2c-UL-GxB" secondAttribute="leading" id="WJU-mg-2bj"/>
+                            <constraint firstItem="lX7-VB-3x7" firstAttribute="leading" secondItem="Kfl-Pj-Bkn" secondAttribute="leading" id="XyW-Xv-U11"/>
+                            <constraint firstItem="b2c-UL-GxB" firstAttribute="leading" secondItem="lX7-VB-3x7" secondAttribute="leading" id="cD0-4w-Xh0"/>
+                            <constraint firstItem="93x-L5-W1G" firstAttribute="top" secondItem="Kvl-CV-yz3" secondAttribute="top" id="cSk-5g-SXE"/>
+                            <constraint firstItem="Kfl-Pj-Bkn" firstAttribute="top" secondItem="lX7-VB-3x7" secondAttribute="bottom" constant="8" symbolic="YES" id="hDn-pJ-u8e"/>
+                            <constraint firstItem="93x-L5-W1G" firstAttribute="trailing" secondItem="b2c-UL-GxB" secondAttribute="trailing" id="oRl-IP-mY1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kvl-CV-yz3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1w-Pc-7rN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="1343"/>
+        </scene>
     </scenes>
     <resources>
         <image name="binary" width="288" height="175"/>
@@ -449,5 +513,6 @@
         <image name="object code" width="347" height="145"/>
         <image name="swift" width="486" height="517"/>
         <image name="swiftSample" width="1248" height="1244"/>
+        <image name="un app layout" width="698" height="448"/>
     </resources>
 </document>

@@ -51,9 +51,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-8l-Gpe" userLabel="Impact">
                                         <rect key="frame" x="0.0" y="152" width="47" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Impact"/>
                                         <connections>
-                                            <segue destination="6mF-Sw-sYc" kind="show" id="ZRc-Ja-fXa"/>
+                                            <segue destination="6mF-Sw-sYc" kind="show" id="Bnv-9m-aOM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -499,6 +499,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kvl-CV-yz3"/>
                     </view>
+                    <connections>
+                        <outlet property="impactImage" destination="lX7-VB-3x7" id="eL7-cm-L9e"/>
+                        <outlet property="mapView" destination="93x-L5-W1G" id="hPo-W5-yCs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1w-Pc-7rN" sceneMemberID="firstResponder"/>
             </objects>

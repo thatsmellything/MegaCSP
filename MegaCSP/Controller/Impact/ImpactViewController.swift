@@ -11,10 +11,11 @@ import MapKit
 
 public class ImpactViewController: UIViewController
 {
+
+    @IBOutlet weak var impactImage: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var animateButton: UIButton!
-    @IBOutlet weak var impactImage: UIImage!
-
+    
 public override func viewDidLoad()
     {
         super.viewDidLoad()

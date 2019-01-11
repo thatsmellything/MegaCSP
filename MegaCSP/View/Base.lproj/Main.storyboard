@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
                                         <state key="normal" title="Data"/>
                                         <connections>
-                                            <segue destination="cE2-d7-CdE" kind="show" id="KFs-z6-xXX"/>
+                                            <segue destination="lwe-NG-nnW" kind="show" id="IgY-kT-mc7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-Gc-fZ4" userLabel="Creativity">
@@ -133,21 +133,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvx-cm-3ND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1412" y="-536.58170914542734"/>
-        </scene>
-        <!--Data Controller-->
-        <scene sceneID="az6-Yh-3Na">
-            <objects>
-                <viewController id="cE2-d7-CdE" customClass="DataController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sE6-BO-4Ga">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="nXC-1d-y5Q"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0I9-tP-t92" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-482" y="-251"/>
         </scene>
         <!--Creativity View Controller-->
         <scene sceneID="ns4-4l-SSt">

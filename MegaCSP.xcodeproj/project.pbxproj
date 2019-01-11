@@ -10,10 +10,13 @@
 		FB1896BA21E4F3CD00847B33 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896B921E4F3CD00847B33 /* AlgorithmViewController.swift */; };
 		FB1896BD21E4F3E300847B33 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896BB21E4F3E300847B33 /* DrawingViewController.swift */; };
 		FB1896BE21E4F3E300847B33 /* ArtCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896BC21E4F3E300847B33 /* ArtCollectionViewController.swift */; };
-		FB1896C021E4F3F500847B33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896BF21E4F3F400847B33 /* ViewController.swift */; };
 		FB1896C221E4F40900847B33 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C121E4F40900847B33 /* AbstractionViewController.swift */; };
 		FB1896C421E4F50C00847B33 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C321E4F50C00847B33 /* DrawingView.swift */; };
 		FB1896C621E4FA1700847B33 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1896C521E4FA1700847B33 /* ArtCell.swift */; };
+		FB5B406421E8EE7E00034271 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B406321E8EE7E00034271 /* DataViewController.swift */; };
+		FB5B406621E8EF4600034271 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B406521E8EF4600034271 /* BucketItem.swift */; };
+		FB5B406821E8EFAF00034271 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B406721E8EFAF00034271 /* BucketItemCell.swift */; };
+		FB5B406A21E8EFCF00034271 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = FB5B406921E8EFCF00034271 /* bucket18.csv */; };
 		FB74A5F421E7A5C900644CB6 /* ImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74A5F321E7A5C900644CB6 /* ImpactViewController.swift */; };
 		FBACBDF121DFC20F001F25FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBACBDF021DFC20F001F25FC /* AppDelegate.swift */; };
 		FBACBDF621DFC20F001F25FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBACBDF421DFC20F001F25FC /* Main.storyboard */; };
@@ -25,10 +28,13 @@
 		FB1896B921E4F3CD00847B33 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		FB1896BB21E4F3E300847B33 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = ../../../../CreativityProject/CreativityProject/Controller/DrawingViewController.swift; sourceTree = "<group>"; };
 		FB1896BC21E4F3E300847B33 /* ArtCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtCollectionViewController.swift; path = ../../../../CreativityProject/CreativityProject/Controller/ArtCollectionViewController.swift; sourceTree = "<group>"; };
-		FB1896BF21E4F3F400847B33 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../DataProject/DataProject/Controller/ViewController.swift; sourceTree = "<group>"; };
 		FB1896C121E4F40900847B33 /* AbstractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractionViewController.swift; path = ../../../../abstractionApp/abstractionApp/Controller/AbstractionViewController.swift; sourceTree = "<group>"; };
 		FB1896C321E4F50C00847B33 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		FB1896C521E4FA1700847B33 /* ArtCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
+		FB5B406321E8EE7E00034271 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		FB5B406521E8EF4600034271 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		FB5B406721E8EFAF00034271 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		FB5B406921E8EFCF00034271 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bucket18.csv; sourceTree = "<group>"; };
 		FB74A5F321E7A5C900644CB6 /* ImpactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpactViewController.swift; sourceTree = "<group>"; };
 		FBACBDED21DFC20E001F25FC /* MegaCSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaCSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBACBDF021DFC20F001F25FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 				FBACBDF021DFC20F001F25FC /* AppDelegate.swift */,
 				FBACBDF721DFC235001F25FC /* Assets.xcassets */,
 				FBACBDFC21DFC235001F25FC /* Info.plist */,
+				FB5B406921E8EFCF00034271 /* bucket18.csv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,7 +140,9 @@
 		FBACBE0721DFC2D5001F25FC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FB1896BF21E4F3F400847B33 /* ViewController.swift */,
+				FB5B406521E8EF4600034271 /* BucketItem.swift */,
+				FB5B406721E8EFAF00034271 /* BucketItemCell.swift */,
+				FB5B406321E8EE7E00034271 /* DataViewController.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBACBDFB21DFC235001F25FC /* LaunchScreen.storyboard in Resources */,
+				FB5B406A21E8EFCF00034271 /* bucket18.csv in Resources */,
 				FBACBDF821DFC235001F25FC /* Assets.xcassets in Resources */,
 				FBACBDF621DFC20F001F25FC /* Main.storyboard in Resources */,
 			);
@@ -220,15 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5B406821E8EFAF00034271 /* BucketItemCell.swift in Sources */,
 				FB1896C421E4F50C00847B33 /* DrawingView.swift in Sources */,
 				FB74A5F421E7A5C900644CB6 /* ImpactViewController.swift in Sources */,
-				FB1896C021E4F3F500847B33 /* ViewController.swift in Sources */,
+				FB5B406421E8EE7E00034271 /* DataViewController.swift in Sources */,
 				FB1896BA21E4F3CD00847B33 /* AlgorithmViewController.swift in Sources */,
 				FB1896BD21E4F3E300847B33 /* DrawingViewController.swift in Sources */,
 				FB1896C221E4F40900847B33 /* AbstractionViewController.swift in Sources */,
 				FB1896BE21E4F3E300847B33 /* ArtCollectionViewController.swift in Sources */,
 				FBACBDF121DFC20F001F25FC /* AppDelegate.swift in Sources */,
 				FB1896C621E4FA1700847B33 /* ArtCell.swift in Sources */,
+				FB5B406621E8EF4600034271 /* BucketItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

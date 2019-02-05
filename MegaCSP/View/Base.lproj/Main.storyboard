@@ -226,7 +226,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-WT-LnS">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <rect key="frame" x="170" y="375" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -259,17 +259,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c53-bX-MuY">
-                                <rect key="frame" x="40.333333333333258" y="31.666666666666742" width="292" height="604"/>
+                                <rect key="frame" x="40.333333333333258" y="31.666666666666742" width="292" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-x0-eKS">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="wzF-8p-wUS"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="doQ-DU-Bk3">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="469"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="469"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="469" id="aD5-R9-DMr"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swit is the next for abstraction because it is the most similar to language." textAlignment="center" lineBreakMode="headTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmQ-lO-ybQ">
-                                        <rect key="frame" x="0.0" y="469" width="292" height="135"/>
+                                        <rect key="frame" x="0.0" y="499" width="292" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="135" id="Atu-6S-P1S"/>
                                             <constraint firstAttribute="width" constant="292" id="BMc-jl-vco"/>
@@ -280,14 +287,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-x0-eKS">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wzF-8p-wUS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.1215850346" blue="0.083497741020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="swv-oF-KfU"/>
@@ -306,17 +305,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C8d-Lz-amm">
-                                <rect key="frame" x="40.999999999999545" y="31.666666666666742" width="292" height="604"/>
+                                <rect key="frame" x="40.999999999999545" y="31.666666666666742" width="292" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Q4-WE0">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="HeH-Oz-Anp"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block" translatesAutoresizingMaskIntoConstraints="NO" id="rS6-uo-SYd">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="469"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="469"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="469" id="QLl-Ki-koV"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block code is after that because it uses parts of language but is more chunky and fragmented than swift." textAlignment="center" lineBreakMode="headTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn6-uy-sqD">
-                                        <rect key="frame" x="0.0" y="469" width="292" height="135"/>
+                                        <rect key="frame" x="0.0" y="499" width="292" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="292" id="F7E-uw-TF4"/>
                                             <constraint firstAttribute="height" constant="135" id="MgV-oI-ZhQ"/>
@@ -327,14 +333,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Q4-WE0">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="HeH-Oz-Anp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094787629009999999" green="1" blue="0.07128639329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tTQ-4n-AFa"/>
@@ -353,17 +351,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KAU-n9-98f">
-                                <rect key="frame" x="40.333333333332803" y="31.666666666666742" width="292" height="604"/>
+                                <rect key="frame" x="40.333333333332803" y="31.666666666666742" width="292" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-Uu-txZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Qtw-3r-bh8"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="object code" translatesAutoresizingMaskIntoConstraints="NO" id="wHu-Hy-xAp">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="469"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="469"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="469" id="NrX-R6-pfV"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object code is next because it starts to transition from language to actual code that computers can read better than humans." textAlignment="center" lineBreakMode="headTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPI-FY-Uah">
-                                        <rect key="frame" x="0.0" y="469" width="292" height="135"/>
+                                        <rect key="frame" x="0.0" y="499" width="292" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="292" id="CZl-fg-sUX"/>
                                             <constraint firstAttribute="height" constant="135" id="fUM-Zi-W9O"/>
@@ -374,14 +379,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-Uu-txZ">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Qtw-3r-bh8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99466503510000004" green="1" blue="0.12216548770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="odk-u1-Noa"/>
@@ -400,17 +397,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M9b-Bs-RGX">
-                                <rect key="frame" x="40.666666666667425" y="31.666666666666742" width="292" height="604"/>
+                                <rect key="frame" x="40.666666666667425" y="31.666666666666742" width="292" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2l-BB-wLo">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="djO-7g-MTX"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binary" translatesAutoresizingMaskIntoConstraints="NO" id="UCa-y0-Ptl">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="469"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="469"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="469" id="eEp-8E-Cme"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0K-Wi-twk">
-                                        <rect key="frame" x="0.0" y="469" width="292" height="135"/>
+                                        <rect key="frame" x="0.0" y="499" width="292" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="292" id="3GP-nJ-nfa"/>
                                             <constraint firstAttribute="height" constant="135" id="67b-UI-SBZ"/>
@@ -422,14 +426,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2l-BB-wLo">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="djO-7g-MTX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1060019696" green="0.18104625930000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cd7-Gt-DBx"/>
@@ -448,17 +444,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dK5-sE-kcn">
-                                <rect key="frame" x="41.33333333333394" y="31.666666666666742" width="292" height="604"/>
+                                <rect key="frame" x="41.33333333333394" y="31.666666666666742" width="292" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSH-Fk-H8b">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="06z-jb-dtX"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logic" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-To-Ky3">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="469"/>
+                                        <rect key="frame" x="0.0" y="30" width="292" height="469"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="469" id="cku-nn-Prd"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The logic gate is how a computer understands binary and thus is the least ike a language and thus the least abstract." textAlignment="center" lineBreakMode="headTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-fq-2qX">
-                                        <rect key="frame" x="0.0" y="469" width="292" height="135"/>
+                                        <rect key="frame" x="0.0" y="499" width="292" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="135" id="Je4-Km-k1s"/>
                                             <constraint firstAttribute="width" constant="292" id="Q7i-sA-g78"/>
@@ -469,14 +472,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSH-Fk-H8b">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="06z-jb-dtX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97465527129999996" green="0.2299725" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="che-Fu-DAQ"/>
@@ -613,7 +608,8 @@
         <image name="un app layout" width="698" height="448"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OGb-dl-jgB"/>
-        <segue reference="Qs3-se-lA8"/>
+        <segue reference="AM6-Fq-C0Y"/>
+        <segue reference="zhH-Fp-MUn"/>
+        <segue reference="06z-jb-dtX"/>
     </inferredMetricsTieBreakers>
 </document>
